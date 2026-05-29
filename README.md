@@ -12,21 +12,35 @@ OmniGuide adds universal guidance fields to generalist robot policies at inferen
 
 Teaser source: [diversity_1080_2x.mp4](https://github.com/omniguide/omniguide.github.io/blob/main/assets/diversity_1080_2x.mp4).
 
-## Repositories
+## Clone
 
-This is the top-level OmniGuide release repository. Clone the implementation repository that matches the base policy you want to run.
+Clone this top-level repository with submodules to get both implementation codebases in one checkout:
+
+```bash
+git clone --recurse-submodules https://github.com/OmniGuide-Code/omniguide.git
+cd omniguide
+```
+
+If you already cloned without submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+## Repository Layout
+
+This repository pins the two OmniGuide implementation repositories as submodules.
 
 | Repository | Base policy | What it contains |
 | --- | --- | --- |
-| [omniguide-openpi](https://github.com/OmniGuide-Code/omniguide-openpi) | OpenPI pi0.5 | DROID-style Franka/Panda policy serving, IsaacLab DROID simulation client, collision guidance, semantic VLM-pointer guidance, and real-robot configs. |
-| [omniguide-gr00t](https://github.com/OmniGuide-Code/omniguide-gr00t) | NVIDIA Isaac GR00T | RoboCasa Combined PnP experiments with base-policy and OmniGuide rollouts, success/collision evaluation scripts, and GR00T-specific setup. |
+| [`omniguide-openpi/`](omniguide-openpi) | OpenPI pi0.5 | DROID-style Franka/Panda policy serving, IsaacLab DROID simulation client, collision guidance, semantic VLM-pointer guidance, and real-robot configs. |
+| [`omniguide-gr00t/`](omniguide-gr00t) | NVIDIA Isaac GR00T | RoboCasa Combined PnP experiments with base-policy and OmniGuide rollouts, success/collision evaluation scripts, and GR00T-specific setup. |
 
 ## OpenPI Setup
 
 Use this path for the OpenPI pi0.5 DROID experiments.
 
 ```bash
-git clone --recurse-submodules https://github.com/OmniGuide-Code/omniguide-openpi.git
 cd omniguide-openpi
 GIT_LFS_SKIP_SMUDGE=1 uv sync
 ```
@@ -45,7 +59,6 @@ The OpenPI release includes representative videos for the collision and semantic
 Use this path for the GR00T RoboCasa Combined PnP experiments.
 
 ```bash
-git clone --recurse-submodules https://github.com/OmniGuide-Code/omniguide-gr00t.git
 cd omniguide-gr00t
 uv sync --python 3.10
 uv pip install -e .
