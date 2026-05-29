@@ -1,4 +1,4 @@
-# OmniGuide
+# OmniGuide: Universal Guidance Fields for Enhancing Generalist Robot Policies
 
 OmniGuide adds universal guidance fields to generalist robot policies at inference time. The method uses task-specific costs, such as collision avoidance and semantic target selection, to guide sampled action trajectories without retraining the base policy.
 
