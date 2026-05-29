@@ -29,12 +29,12 @@ git submodule update --init --recursive
 
 ## Repository Layout
 
-This repository pins the two OmniGuide implementation repositories as submodules.
+This repository pins the two OmniGuide implementation repositories as submodules. After cloning with `--recurse-submodules`, they appear as local directories named `omniguide-openpi/` and `omniguide-gr00t/`.
 
 | Repository | Base policy | What it contains |
 | --- | --- | --- |
-| [`omniguide-openpi/`](omniguide-openpi) | OpenPI pi0.5 | DROID-style Franka/Panda policy serving, IsaacLab DROID simulation client, collision guidance, semantic VLM-pointer guidance, and real-robot configs. |
-| [`omniguide-gr00t/`](omniguide-gr00t) | NVIDIA Isaac GR00T | RoboCasa Combined PnP experiments with base-policy and OmniGuide rollouts, success/collision evaluation scripts, and GR00T-specific setup. |
+| [omniguide-openpi](https://github.com/OmniGuide-Code/omniguide-openpi) | OpenPI pi0.5 | DROID-style Franka/Panda policy serving, IsaacLab DROID simulation client, collision guidance, semantic VLM-pointer guidance, and real-robot configs. |
+| [omniguide-gr00t](https://github.com/OmniGuide-Code/omniguide-gr00t) | NVIDIA Isaac GR00T | RoboCasa Combined PnP experiments with base-policy and OmniGuide rollouts, success/collision evaluation scripts, and GR00T-specific setup. |
 
 ## OpenPI Setup
 
