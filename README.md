@@ -17,7 +17,7 @@ Teaser source: [diversity_1080_2x.mp4](https://github.com/omniguide/omniguide.gi
 Clone this top-level repository with submodules to get both implementation codebases in one checkout:
 
 ```bash
-git clone --recurse-submodules https://github.com/OmniGuide-Code/omniguide.git
+git clone --recurse-submodules https://github.com/daniilidis-group/OmniGuide.git
 cd omniguide
 ```
 
