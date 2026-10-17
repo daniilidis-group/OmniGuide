@@ -1,6 +1,7 @@
 [submodule "omniguide-openpi"]
 	path = omniguide-openpi
 	url = https://github.com/OmniGuide-Code/omniguide-openpi.git
+	branch = main
 [submodule "omniguide-gr00t"]
 	path = omniguide-gr00t
 	url = https://github.com/OmniGuide-Code/omniguide-gr00t.git
