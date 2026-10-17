@@ -18,7 +18,7 @@ Clone this top-level repository with submodules to get both implementation codeb
 
 ```bash
 git clone --recurse-submodules https://github.com/daniilidis-group/OmniGuide.git
-cd omniguide
+cd OmniGuide
 ```
 
 If you already cloned without submodules:
