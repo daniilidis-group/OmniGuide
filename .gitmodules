@@ -5,3 +5,4 @@
 [submodule "omniguide-gr00t"]
 	path = omniguide-gr00t
 	url = https://github.com/OmniGuide-Code/omniguide-gr00t.git
+	branch = main
